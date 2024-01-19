@@ -1,0 +1,146 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    color: white;
+    height: 60vh;
+    background: url('./background.png') center/cover no-repeat;
+    position: relative; /* Añade posición relativa para que el ::before sea relativo a este elemento */
+}
+
+.header__nav-list {
+    list-style: none;
+    display: flex;
+    color: black;
+}
+
+.header__nav-item {
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.header__nav-item-left {
+    margin-right: 160vh; /* Mueve este elemento al extremo izquierdo */
+}
+
+.header__nav::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('./background.png') center/cover no-repeat;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+
+.hero {
+    height: 30vh;
+    text-align: center;
+    padding: 2rem;
+    text-align: center;
+    padding: 2rem;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.hero>h1{
+    color: black;
+    text-align: center;
+    margin-top: 5%;
+    font-family: 'Roboto', sans-serif;
+}
+.hero>p{
+    color: #333;
+    font-size:x-large;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.products-carousel {
+    display: flex;
+    overflow: hidden;
+    margin: 20px 0; /* Ajusta el margen según sea necesario */
+}
+
+.product {
+    flex: 0 0 33.33%; /* Ajusta el ancho del contenedor del producto para mostrar tres en una fila */
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.product img {
+    width: 30%;
+    max-height: auto; /* Ajusta la altura máxima de la imagen según sea necesario */
+    object-fit: cover;
+    border-radius: 8px;
+}
+h2{
+    color: #333;
+    margin-left: 40%;
+}
+.product__title {
+    margin: 10px 0;
+}
+
+.product__description {
+    color: #666;
+}
+
+
+/* Section 3----Style */
+.Section3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    /* Puedes agregar más estilos según tus necesidades */
+}
+
+.product-info {
+    flex: 1;
+    padding-right: 20px; /* Ajusta el espaciado entre el texto y la imagen según tus necesidades */
+    box-sizing: border-box;
+}
+
+.product-info__title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    /* Puedes agregar más estilos según tus necesidades */
+}
+
+.product-info__description {
+    color: #666;
+    /* Puedes agregar más estilos según tus necesidades */
+}
+
+.product-image {
+    flex: 1;
+}
+
+.product-image img {
+    width: 100%; /* Asegura que la imagen ocupe el 100% del ancho del contenedor */
+    max-height: 300px; /* Establece una altura máxima para la imagen según tus necesidades */
+    object-fit: cover; /* Ajusta el ajuste del objeto para cubrir el contenedor */
+    border-radius: 8px; /* Agrega bordes redondeados según sea necesario */
+}
+
+
+
+
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}
